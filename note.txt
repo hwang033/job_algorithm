@@ -1,0 +1,8 @@
+1. Longest prolindrome String:
+scan each item, test if it is the center of a polindrome
+2.ASCII codes
+There are 256 ASCII code in total, range from 0~255
+ord('a') returns 97
+chr(97) return 'a'
+
+

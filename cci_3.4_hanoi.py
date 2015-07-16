@@ -4,7 +4,7 @@ class Hanoi:
         self.towers = [range(n, 0, -1), [], []]
     
     def move_to(self, disk, start, end, by):
-        #move disk - 1 to by threough end
+        #move disk - 1 to by through end
         print self.towers
         if disk > 1:
             self.move_to(disk - 1, start, by, end)

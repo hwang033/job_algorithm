@@ -32,7 +32,8 @@ class Solution:
             
             if closest is None:
                 closest = presumlh + num1
-            elif presumlh and  abs(presumlh + num1 - target) < abs(closest - target):
+            elif presumlh and  abs(presumlh + num1 - target) < \
+                abs(closest - target):
                     closest = presumlh + num1
         return closest
 

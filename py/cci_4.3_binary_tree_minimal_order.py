@@ -18,7 +18,7 @@ def tree_traverse(root, des="root"):
     if root == None:
         return
     print root.val, des
-    tree_traverse(root.left, "%s' left" %root.val)
+    tree_traverse(root.left, "%s's left" %root.val)
     tree_traverse(root.right, "%s's right" %root.val)
 
 if __name__ == "__main__":

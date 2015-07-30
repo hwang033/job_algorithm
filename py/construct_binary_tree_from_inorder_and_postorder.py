@@ -11,7 +11,7 @@ class Solution:
     # @param postorder, a list of integers
     # @return a tree node
     def buildTree(self, inorder, postorder):
-        print inorder, postorder 
+     
         if not inorder or not postorder:
             return None
         
@@ -41,6 +41,7 @@ if __name__ == "__main__":
     n1.left = n2
 
     s = Solution()
-    #print s.buildTree(['a','b','d','e','h','i','c','f','g'], ['d','b','h','e','i','a','f','c','g'])
+    #print s.buildTree(['a','b','d','e','h','i','c','f','g'],\
+    #['d','b','h','e','i','a','f','c','g'])
     print s.buildTree([2,1,3], [2,3,1])
 

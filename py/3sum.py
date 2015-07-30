@@ -7,6 +7,7 @@ class Solution:
             return sum(num)
         numsort = sorted(num)
         closest = None
+        
         for i in range(len(numsort)):
             num1 = numsort[i]
             subtarget = target - num1
@@ -14,7 +15,7 @@ class Solution:
             low = i + 1
             flag = 0 
             presumlh = None
-            pdb.set_trace()
+
             while low < high:
                 sumlh = numsort[low] + numsort[high]
                 if presumlh is None:

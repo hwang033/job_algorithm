@@ -11,6 +11,7 @@ class Solution:
     def climbs(self, n, subrst):
         if subrst == n:
             return 1
+            
         if subrst > n:
             return 0
             

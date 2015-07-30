@@ -9,18 +9,17 @@ class stack:
         if 3 > s_num >= 0 and self.tops[s_num] <= self.length*s_num/3:
             self.array[self.tops[s_num]] = val 
             self.tops[s_num] += 1
-        print self.array
+            
             
     def pop(self, s_num):
         #check s_num stack is empty or not 
+        val = None
         if 3 > s_num >= 0 and self.tops[s_num] > self.length*s_num/3: 
             val = self.array[self.tops[s_num] - 1]
             self.array[self.tops[s_num] - 1] = 0
             self.tops[s_num] -= 1
-            print self.array
-            return val
-        else:
-            return None
+        return val
+      
 
 if __name__ == "__main__":
     s = stack(3)

@@ -12,8 +12,8 @@ class TreeNode:
 class Solution:
     # @param root, a tree node
     # @return a list of integers
-    '''
-    def inorderTraversal(self, root, rst = []):
+    
+    def inorderTraversalRecursive(self, root, rst = []):
         #visit current node
         if root is not None:
             self.inorderTraversal(root.left, rst)
@@ -21,7 +21,7 @@ class Solution:
             self.inorderTraversal(root.right, rst)
         return rst
 
-    '''
+    
     def inorderTraversal(self, root):
         
         stack = [] 

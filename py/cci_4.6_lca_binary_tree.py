@@ -8,6 +8,7 @@ def lca(root, p, q):
     #check is p and q are in the tree or not 
     if root == None:        
         return None
+        
     if root == p or root == q:
         return root
 
@@ -16,6 +17,7 @@ def lca(root, p, q):
     
     if l and r:
         return root, True
+        
     if (not l) and (not r):
         return None
     return l if l is not None else r

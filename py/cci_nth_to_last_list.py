@@ -34,22 +34,13 @@ def delete_node(n):
     return True
     
 if __name__ == "__main__":
-    #vals = [1,2,3,4,2]
-    #vals = [1,1,1,1]
-    #vals = [1]
-    #vals = []
+
     vals = [6,5,4,3,2,1]
     ln = head = Node(0)
     for val in vals:
         ln.next = Node(val)
         ln = ln.next
-    #pdb.set_trace()
-    print delete_node(head.next.next)       
+         
     while head is not None:
-        print head.val
         head = head.next
-    #print find_nth_to_last(head.next, 1)
-    #print find_nth_to_last(head.next, 2)
-    #print find_nth_to_last(head.next, 4)
-    #print find_nth_to_last(head.next, 6)
-    #print find_nth_to_last(head.next, 8)
+

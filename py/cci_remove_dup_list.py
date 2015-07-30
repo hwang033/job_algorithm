@@ -17,6 +17,7 @@ def remove_dup(head):
         else:
             has_val.add(cur.next.val)
             cur = cur.next
+            
     return dummy.next
 
 def remove_dup2(head):
@@ -41,7 +42,6 @@ if __name__ == "__main__":
     #vals = [1,2,3,4,2]
     #vals = [1,1,1,1]
     #vals = [1]
-    vals = []
     #vals = [1,1,1,2,2,4,4,3,2,2]
     ln = head = Node(0)
     for val in vals:

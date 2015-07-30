@@ -1,4 +1,3 @@
-import pdb
 # Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
@@ -19,7 +18,6 @@ class Solution:
         stn.append(root)
 
         while True:
-            pdb.set_trace()
             if inorder[0] == stn[-1].val:
                 # deal with left tree
                 p = stn.pop()

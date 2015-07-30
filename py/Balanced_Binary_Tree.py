@@ -25,11 +25,7 @@ class Solution:
             return 1
         lh = self.height(node.left)
         lr = self.height(node.right)
-
-        print node.val
-        print lh 
-        print lr 
-        
+       
         if lh is False or lr is False:
             return False
             

@@ -10,32 +10,36 @@ class Solution:
     # @param {integer[]} inorder
     # @param {integer[]} postorder
     # @return {TreeNode}
-    '''
-    def buildTree(self, inorder, postorder):
+    
+    def buildTreeRecursive(self, inorder, postorder):
         # first try copy inorder and postorder but failed
         if not inorder or not postorder:
             return None
-        return self.helper(inorder, postorder, 0, len(inorder) - 1, 0, len(postorder) - 1)
+        return self.helper(inorder, postorder, 0, len(inorder) - 1,\
+                0, len(postorder) - 1)
     
     def helper(self, inorder, postorder, in_s, in_e, po_s, po_e):
         if in_s > in_e or po_s > po_e:
             return None
             
         root_val = postorder[po_e]
-        print root_val
+        
         if root_val == 4:
             pdb.set_trace()
         idx = inorder.index(root_val)
          
-        root.left = self.helper(inorder, postorder, in_s, idx-1, po_s, po_s + idx - in_s - 1)
-        root.right = self.helper(inorder, postorder, idx + 1, in_e, po_s + idx - in_s, po_e -1)
+        root.left = self.helper(inorder, postorder, in_s, idx-1, po_s,\
+                    po_s + idx - in_s - 1)
+        root.right = self.helper(inorder, postorder, idx + 1, in_e,\
+                    po_s + idx - in_s, po_e -1)
         
         return root
-    '''
+   
     def buildTree(self, inorder, postorder):
         # this solution is from other
         if len(inorder) == 0:
             return None
+            
         root = TreeNode(postorder.pop())
         stn = list()
         stn.append(root)

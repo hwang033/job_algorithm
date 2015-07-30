@@ -12,9 +12,6 @@ class Solution:
     # @return a tree node
     def buildTree(self, preorder, inorder):
         #recursive method buld tree
-
-        print preorder, inorder
-
         if not preorder or not inorder:
             return None
         val = preorder[0]
@@ -27,7 +24,7 @@ class Solution:
             rightTr = preorder[idx+1:]
             leftTr = preorder[:idx+1]
             leftTr.remove(val)
-            #print leftTr, rightTr 
+           
         if not leftTr:
             curnode.left = None 
         else:
@@ -46,6 +43,7 @@ if __name__ == "__main__":
     n1.left = n2
 
     s = Solution()
-    print s.buildTree(['a','b','d','e','h','i','c','f','g'], ['d','b','h','e','i','a','f','c','g'])
+    #print s.buildTree(['a','b','d','e','h','i','c','f','g'],\
+    #['d','b','h','e','i','a','f','c','g'])
     print s.buildTree([1,2,3], [3,2,1])
 

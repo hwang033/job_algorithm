@@ -27,7 +27,8 @@ class Solution:
                 maximum = val
                 f2[idx] = f2[idx-1]
 
-        return max([f1[idx] + f2[len(prices)-idx-1] for idx in xrange(len(prices))])
+        return max([f1[idx] + f2[len(prices)-idx-1] for\
+                    idx in xrange(len(prices))])
 
 if __name__ == "__main__":
     s = Solution()

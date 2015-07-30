@@ -28,9 +28,6 @@ if __name__ == "__main__":
     n4 = TreeNode(4)
     n5 = TreeNode(5)
     n1.left = n2
-    #n1.right = n3
-    #n2.left = n4
-    #n2.right = n5
 
     s = Solution()
     print s.levelOrderBottom(n1)

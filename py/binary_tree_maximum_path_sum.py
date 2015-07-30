@@ -1,5 +1,4 @@
 # Definition for a  binary tree node
-import pdb
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -16,7 +15,7 @@ class Solution:
         return max(sum_val)
         
     def post_order(self, root, sum_val):
-        #pdb.set_trace() 
+        
         if root.left is None and root.right is None:
             return root.val, sum_val
 

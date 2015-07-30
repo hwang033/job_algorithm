@@ -6,7 +6,7 @@ class Solution:
         d = {}
         for s in strs:
             sum_hash = sum([hash(x) for x in s])
-            print sum_hash
+          
             if d.has_key(sum_hash):
                 rst.add(d[sum_hash])
                 rst.add(s)
